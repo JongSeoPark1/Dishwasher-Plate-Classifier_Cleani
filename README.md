@@ -22,6 +22,7 @@ Stage 1: Pre-training (Base Learning)
 Trains the models from scratch (or ImageNet weights) using a large dataset.
 
 python train_base.py
+
 Output: Models are saved in saved_models/.
 
 -----------------------------------------------------------------------------------------------------------------
@@ -31,6 +32,7 @@ Stage 2: Fine-tuning (Domain Adaptation)
 Refines the models using real-world data collected from the dishwasher environment with a lower learning rate (1e-5).
 
 python train_finetune.py
+
 Output: Final models are saved in finetuned_models/.
 
 -----------------------------------------------------------------------------------------------------------------
@@ -39,13 +41,16 @@ Stage 3: Inference & Testing
 Evaluates the ensemble model on the test dataset.
 
 python inference.py
+
 Output: Prints prediction results, confidence scores, and final accuracy.
 
 -----------------------------------------------------------------------------------------------------------------
 📊 Model Details
 Model	                                     
 MobileNetV3-Large: Summurized information utilization.
+
 EfficientNet-B0: Characteristic of images.
+
 ResNet18:	Robust and stable feature extraction.
 
 Ensemble Averages Softmax probabilities from all 3 models.
