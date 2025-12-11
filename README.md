@@ -49,6 +49,7 @@ EfficientNet-B0: Characteristic of images.
 ResNet18:	Robust and stable feature extraction.
 
 Ensemble Averages Softmax probabilities from all 3 models.
+
 🏆 Results
 Test Accuracy: 94.4%
 
