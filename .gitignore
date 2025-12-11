@@ -1,0 +1,5 @@
+data/
+saved_models/
+finetuned_models/
+__pycache__/
+.DS_Store
